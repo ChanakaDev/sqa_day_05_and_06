@@ -36,10 +36,13 @@ public class Main {
 // 1. ✅ correct Implement the BrowserFactor Class
 // 2. ✅ Implement the TestNGUtil Class
 // 3. ✅ Implement the PageBase Class
-// 4. Implement the EbayHome class
+// 4. ✅ Implement the EbayHome class
 // 5. Implement the TestCases
 
 // Important classes
 // =================
 // *. BrowserFactory => is used to create web browser instances
 // *. PageFactory => is used to create web page instances
+//
+// *. PageBase class => inherit page objects
+// *. TestNGUtil class => inherit test cases
