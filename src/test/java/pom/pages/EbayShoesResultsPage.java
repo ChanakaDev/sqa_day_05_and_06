@@ -12,7 +12,7 @@ public class EbayShoesResultsPage extends PageBase {
 
     // 01. WebElements
     // ----------------
-    @FindBy(xpath = "//input[@aria-label='Adidas']")
+    @FindBy(xpath = "//input[@aria-label='adidas']")
     WebElement adidasCheckBox;
 
     // 02. Methods to interact with WebElements

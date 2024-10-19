@@ -47,3 +47,13 @@ public class Main {
 //
 // *. PageBase class => inherit page objects
 // *. TestNGUtil class => inherit test cases
+
+// Enabling parallel processing to the pom
+// =======================================
+// 1. Install "create testng xml" plugin
+// 2. Create testng.xml file
+// 3. Auto format that file
+// 4. If there is the test cases and methods, you don't need to manually add them
+//    Otherwise you need to add them using the test, classes, class, methods, include tags
+// 5. Set parallel="methods" and thread-count="#ofMethods"
+// 6. Run th program using testng.xml file

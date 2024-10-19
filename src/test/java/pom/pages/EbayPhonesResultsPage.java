@@ -12,7 +12,7 @@ public class EbayPhonesResultsPage extends PageBase {
 
     // 01. WebElements
     // ----------------
-    @FindBy(xpath = "//input[@aria-label='Apple']\")")
+    @FindBy(xpath = "//input[@aria-label='Apple']")
     WebElement appleCheckBox;
 
     // 02. Methods to interact with WebElements

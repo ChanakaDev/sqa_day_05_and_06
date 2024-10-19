@@ -18,7 +18,7 @@ public class BrowserFactory {
     // Automatically creates a browser instance
     ThreadLocal<WebDriver> threadLocal = ThreadLocal.withInitial(() -> {
         WebDriver driver;
-        String browserType = System.getProperty("browser", "edge");
+        String browserType = System.getProperty("browser", "chrome");
 
         switch (browserType) {
             case "edge":

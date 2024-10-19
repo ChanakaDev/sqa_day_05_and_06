@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test parallel="methods" thread-count="2" verbose="2" preserve-order="true" name="/Users/chanakabandara/IdeaProjects/sqa_day_05_and_06">
+        <classes>
+            <class name="pom.tests.EbayHomeTests">
+                <methods>
+                    <include name="searchMobilePhones"/>
+                    <include name="searchShoes"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

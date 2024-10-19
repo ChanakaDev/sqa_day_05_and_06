@@ -13,7 +13,7 @@ public class EbayHomeTests extends TestNGUtil {
     public void searchMobilePhones() {
         // Load the "PageBase" and use the "loadEbayHomePage" method
         PageBase pageBase = PageFactory.initElements(browserFactory.getDriver(), PageBase.class);
-        EbayHome ebayHome = pageBase.loadEbayHomePage("www.ebay.com");
+        EbayHome ebayHome = pageBase.loadEbayHomePage("https://www.ebay.com/");
 
         // Perform writing text in input box
         ebayHome.insertTextToSearchBox("mobile phones");
@@ -32,7 +32,7 @@ public class EbayHomeTests extends TestNGUtil {
     public void searchShoes() {
         // Load the "PageBase" and use the "loadEbayHomePage" method
         PageBase pageBase = PageFactory.initElements(browserFactory.getDriver(), PageBase.class);
-        EbayHome ebayHome = pageBase.loadEbayHomePage("www.ebay.com");
+        EbayHome ebayHome = pageBase.loadEbayHomePage("https://www.ebay.com/");
 
         // Perform writing text in input box
         ebayHome.insertTextToSearchBox("shoes");

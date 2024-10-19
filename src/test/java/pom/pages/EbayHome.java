@@ -17,10 +17,10 @@ public class EbayHome extends PageBase {
     @FindBy(xpath = "//input[@id='gh-ac']")
     WebElement SearchBox;
 
-    @FindBy(xpath = "//select[@id='gh-cat')]")
+    @FindBy(xpath = "//select[@id='gh-cat']")
     WebElement DropDown;
 
-    @FindBy(xpath = "input[@id='gh-btn']")
+    @FindBy(xpath = "//input[@id='gh-btn']")
     WebElement SearchButton;
 
     // 02. Methods to interact with WebElements
@@ -30,8 +30,9 @@ public class EbayHome extends PageBase {
     }
 
     public void selectCategoryByVisibleText(String visibleText) {
-        Select dropDown = new Select(DropDown);
-        dropDown.selectByVisibleText(visibleText);
+//        Select dropDown = new Select(DropDown);
+//        dropDown.selectByVisibleText(visibleText);
+        new Select(DropDown).selectByVisibleText(visibleText);
     }
 
     public <T> T clickSearchButton(String visibleText) {
