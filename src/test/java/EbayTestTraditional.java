@@ -15,7 +15,7 @@ public class EbayTestTraditional {
 
     @BeforeTest
     public void initBrowser() {
-        driver = WebDriverManager.edgedriver().avoidShutdownHook().create();
+        driver = WebDriverManager.chromedriver().avoidShutdownHook().create();
         driver.manage().window().maximize();
 
         driver.get("https://www.ebay.com/");
