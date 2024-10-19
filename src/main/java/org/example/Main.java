@@ -18,13 +18,14 @@ public class Main {
 
 // 4. create page classes (for page objects)
 //      - PageBase (common methods for all the page objects (like get webpage, scroll it, hover it likewise)
-//      - EbayHome (for web elements and their behaviour, in Home page)
-//      - EbayPhonesResultsPage (for web elements and their behaviour, in PhonesResult page)
-//      - EbayShoesResultsPage (for web elements and their behaviour, in ShoesResult page)
+//      - EbayHome (for web elements and their methods, in Home page)
+//      - EbayPhonesResultsPage (for web elements and their methods, in PhonesResult page)
+//      - EbayShoesResultsPage (for web elements and their methods, in ShoesResult page)
 
 // 5. create test classes (for test cases)
-//      - EbayMobilePhonesTests (test methods for mobile phones)
-//      - EbayShoesTests (test methods for shoes)
+//      - EbayHomeTests
+//          (Test methods for the EbayHome page object)
+//          (This class calls EbayHome page methods)
 
 // 6. create utility classes (for supporting the pom model)
 //      - BrowserFactory (Methods for initializing the browserFactory)
@@ -37,7 +38,7 @@ public class Main {
 // 2. ✅ Implement the TestNGUtil Class
 // 3. ✅ Implement the PageBase Class
 // 4. ✅ Implement the EbayHome class
-// 5. Implement the TestCases
+// 5. ✅ Implement the TestCases
 
 // Important classes
 // =================
