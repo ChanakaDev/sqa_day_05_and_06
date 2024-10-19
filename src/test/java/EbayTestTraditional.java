@@ -7,8 +7,6 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import javax.swing.*;
-
 public class EbayTestTraditional {
 
     WebDriver driver;

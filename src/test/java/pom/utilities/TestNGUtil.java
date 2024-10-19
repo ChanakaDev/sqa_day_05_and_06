@@ -3,21 +3,21 @@ package pom.utilities;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
-// This class will be used to inherit other classes
+// This class will be used to inherit the Test Cases
+// =================================================
 public class TestNGUtil {
-    // We are not creating a new instance here
-    // Rather we are going to get the same instance form browserFactory and hold it here
+    // Just a variable
     protected BrowserFactory browserFactory;
 
     @BeforeMethod
     public void initBrowser() {
-        // Call getBrowserFactory method to access the single instance of the BrowserFactory class
+        // Call "getBrowserFactory" method from BrowserFactory
         browserFactory = BrowserFactory.getBrowserFactory();
     }
 
     @AfterMethod
     public void quiteBrowser() {
-        // Call the quit method through getDriver() of the browserFactory
+        // Call "quite" method from BrowserFactory.getDriver()
         browserFactory.getDriver().quit();
     }
 }

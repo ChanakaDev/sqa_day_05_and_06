@@ -1,13 +1,18 @@
 package pom.pages;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 
+// This class will be used to inherit the Page Objects
+// ===================================================
 public class PageBase {
-    // Following constructor is used to assign a value to the driver
-    // instance, when an object from the PageBase class is created
+
+    // When inheriting a Page Object from "PageBase"
+    // Call the constructor to access the driver
     protected WebDriver driver;
+
     public PageBase(WebDriver driver) {
         this.driver = driver;
     }
@@ -22,5 +27,11 @@ public class PageBase {
     public void scrollDown(int x, int y) {
         Actions scroll = new Actions(driver);
         scroll.scrollByAmount(x, y).perform();
+    }
+
+    // Method to hover an element on a web page
+    public void hover(WebElement element) {
+        Actions hover = new Actions(driver);
+        hover.moveToElement(element);
     }
 }

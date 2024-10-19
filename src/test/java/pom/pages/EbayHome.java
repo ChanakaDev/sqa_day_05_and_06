@@ -1,6 +1,5 @@
 package pom.pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -8,9 +7,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 public class EbayHome extends PageBase {
-    // Constructor of the super class
+    // Calling constructor of the super class "PageBase"
     public EbayHome(WebDriver driver) {
-        // Passing the driver instance to fetch the web page
         super(driver);
     }
 
