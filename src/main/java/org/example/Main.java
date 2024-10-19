@@ -15,3 +15,9 @@ public class Main {
         }
     }
 }
+
+// Steps of Implementing the Page Object Model (POM)
+// =================================================
+// 1. Add selenium, testng and web driver manager to the dependencies
+// 2. Implement a basic traditional test program
+// 3.
