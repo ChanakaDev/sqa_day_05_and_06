@@ -29,3 +29,12 @@ public class Main {
 // 6. create utility classes (for supporting the pom model)
 //      - TestNGUtil (initialize browser factory)
 //      - BrowserFactory (initialize browser instance)
+
+
+// Steps according to the order of execution
+// =========================================
+// 1. Implement the BrowserFactor Class
+// 2. Implement the TestNGUtil Class
+// 3. Implement the PageBase Class
+// 4. Implement the EbayHome class
+// 5. Implement the TestCases
