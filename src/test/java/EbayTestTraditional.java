@@ -42,7 +42,7 @@ public class EbayTestTraditional {
     }
 
     @AfterTest
-    public void closeBrowser() {
+    public void quiteBrowser() {
         driver.quit();
     }
 }

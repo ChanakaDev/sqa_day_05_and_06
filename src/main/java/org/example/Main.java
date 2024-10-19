@@ -17,7 +17,7 @@ public class Main {
 //      - utilities
 
 // 4. create page classes (for page objects)
-//      - PageBase (for creating instances of the page objects)
+//      - PageBase (common methods for all the page objects (like get webpage, scroll it, hover it likewise)
 //      - EbayHome (for web elements and their behaviour, in Home page)
 //      - EbayPhonesResultsPage (for web elements and their behaviour, in PhonesResult page)
 //      - EbayShoesResultsPage (for web elements and their behaviour, in ShoesResult page)
@@ -27,14 +27,19 @@ public class Main {
 //      - EbayShoesTests (test methods for shoes)
 
 // 6. create utility classes (for supporting the pom model)
-//      - TestNGUtil (initialize browser factory)
-//      - BrowserFactory (initialize browser instance)
+//      - BrowserFactory (Methods for initializing the browserFactory)
+//      - TestNGUtil (init and quite browserFactory (aka the browser instance))
 
 
 // Steps according to the order of execution
 // =========================================
-// 1. Implement the BrowserFactor Class
-// 2. Implement the TestNGUtil Class
-// 3. Implement the PageBase Class
+// 1. ✅ correct Implement the BrowserFactor Class
+// 2. ✅ Implement the TestNGUtil Class
+// 3. ✅ Implement the PageBase Class
 // 4. Implement the EbayHome class
 // 5. Implement the TestCases
+
+// Important classes
+// =================
+// *. BrowserFactory => is used to create web browser instances
+// *. PageFactory => is used to create web page instances
